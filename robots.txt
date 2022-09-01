@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://palazzo.arq.br/ppgfau3908/sitemap.xml
