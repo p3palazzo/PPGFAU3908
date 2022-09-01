@@ -11,21 +11,30 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 theme                    : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "pt-BR"
+title                    : "PPGFAU 3908"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+subtitle                 : "Urbanismo e Urbanização Luso-brasileira"
+name                     : "Maria Fernanda Derntl e Pedro P. Palazzo"
+description: >-
+  As  determinantes e condicionantes econômicas, sociais, políticas e
+  ambientais da urbanização luso-brasileira, enquanto processo e forma.
+  O urbanismo de origem portuguesa como rede de saberes, técnicas,
+  práticas, princípios formais, instituições e pessoas.
+  Os elementos estruturais do construído urbano nas cidades de origem
+  portuguesa. Estudo de espaços urbanos, projetos, teorias e políticas
+  do século XIV ao XIX.
+
+url                      : "https://palazzo.arq.br"
+baseurl                  : "/ppgfau3908"
+repository               : "p3palazzo/ppgfau3908"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -61,8 +70,6 @@ atom_feed:
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
-lunr:
-  search_within_pages    : # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -74,18 +81,21 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
 yandex_site_verification :
-baidu_site_verification  :
+naver_site_verification  :
+head_scripts:
+  - https://kit.fontawesome.com/eddf3d9a63.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Social Sharing
 twitter:
-  username               :
+  username               : p3palazzo
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "https://repository-images.githubusercontent.com/271059855/eef83080-aa80-11ea-9464-650e34bad83c"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -103,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Pedro P. Palazzo"
+  avatar           : "https://avatars.githubusercontent.com/u/8295666?s=400&u=874bd9ba623ae5ceb9cd1b559bab3479fcda9a30&v=4"
+  bio              : "Professor Associado"
+  location         : "FAU–UnB"
   email            :
   links:
     - label: "Email"
@@ -161,6 +171,7 @@ exclude:
   - vendor
   - .asset-cache
   - .bundle
+  - .gitignore
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/plugins
@@ -214,6 +225,8 @@ pandoc:
     - bibliography: "_data/biblio.yaml"
     - csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-note-bibliography-with-ibid.csl"
     - section-divs
+    #- toc
+    #- template: "_lib/default.html5"
 relative_links:
   enabled: true
   collections: true
@@ -227,9 +240,10 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
+timezone: America/Sao_Paulo
+date_format: "%d/%m/%Y"
 
 
 # Plugins (previously gems:)
@@ -239,15 +253,15 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-relative-links
-  # Non-GH-Pages compliant plugins below.
   - jekyll-data
   - jekyll-pandoc
+  - jekyll-relative-links
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
+  #- jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -293,6 +307,27 @@ compress_html:
 
 # Defaults
 defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      toc: false
+      toc_label: false
+      toc_sticky: false
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: false
+      header:
+        overlay_filter: 0.3
+  # _aula
+  - scope:
+      path: ""
+      type: aula
+    values:
+      layout: single
+      show_date: true
   # _posts
   - scope:
       path: ""
@@ -304,3 +339,49 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Collections
+collections:
+  aula:
+    output: true
+    permalink: /:collection/:name/
+    order:
+      - arqtrad.md
+      - processos.md
+      - taipa.md
+      - arquitravada.md
+      - muraria.md
+      - coberturas.md
+      - arcos.md
+      - ambiente.md
+      - proposito.md
+      - espaco.md
+      - proporcionar.md
+      - completar.md
+      - ordenar.md
+      - articular.md
+      - caracterizar.md
+      - urbanismo.md
+  plano:
+    output: true
+    permalink: /:collection/:name/
+    order:
+      - por-que-historia.md
+      - sobre-disciplina.md
+      - objetivos.md
+      - metodologia.md
+      - apoio.md
+      - avalia.md
+      - bibliografia.md
+  trabalho:
+    output: true
+    permalink: /:collection/:name/
+    order:
+      - cabana.md
+      - vernacular.md
+      - volumes.md
+      - classico.md
+      - materiais.md
+      - desenho.md
+      - digitalizar.md
+      - maquete.md

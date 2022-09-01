@@ -1,24 +1,66 @@
 ---
-title: "Your scholarly website here."
-layout: single
+title: "Programa e cronograma"
+author_profile: true
+classes: wide
 header:
-  overlay_image: https://upload.wikimedia.org/wikipedia/commons/9/96/The_Professor\'s_Dream_(1848).jpeg
-  overlay_filter: 0.3
-  caption: "Charles Robert Cockerell, [The Professor's Dream](https://commons.wikimedia.org/wiki/File:The_Professor's_Dream_(1848).jpeg), 1848"
+  overlay_image: https://upload.wikimedia.org/wikipedia/commons/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  overlay_filter: 0.7
+  caption: "João Teixeira Albernaz, [Planta da restituição da Bahia](https://commons.wikimedia.org/wiki/File:Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA,_por_Jo%C3%A3o_Teixeira_Albernaz.jpg), 1631"
   actions:
-  - label: "GitHub"
-    url: https://github.com/p3palazzo/jekyll-pandoc-tufte-mmistakes
+  - label: "Plano de ensino"
+    url: /plano/
 excerpt: >
-  A scholarly website template using Jekyll, Pandoc, Tufte CSS,
-  Minimal-Mistakes theme
+  As  determinantes e condicionantes econômicas, sociais, políticas e
+  ambientais da urbanização luso-brasileira, enquanto processo e forma.
+  O urbanismo de origem portuguesa como rede de saberes, técnicas,
+  práticas, princípios formais, instituições e pessoas.
+  Os elementos estruturais do construído urbano nas cidades de origem
+  portuguesa. Estudo de espaços urbanos, projetos, teorias e políticas
+  do século <span class="smallcaps">XIII</span> ao <span
+  class="smallcaps">XIX</span>.
+
+unidade1:
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Das biografias urbanas à história–problema"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Estudos morfológicos"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Dos monumentos nacionais ao patrimônio urbano"
+
+unidade2:
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Cânones interpretativos"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Renovação crítica"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Império português e saberes urbanísticos"
+
+unidade3:
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Urbanização e formação de territórios"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "São Paulo"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "Goiás"
+- image_path: https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg/640px-Planta_da_Restitui%C3%A7%C3%A3o_da_BAHIA%2C_por_Jo%C3%A3o_Teixeira_Albernaz.jpg
+  title     : "O longo século XIX"
 ---
 
-See the
-[GitHub repository](https://github.com/p3palazzo/jekyll-pandoc-tufte-mmistakes)
-for instructions on how to use this template.
+## Unidade I · Formação do campo disciplinar ##
 
-For a working example, check out:
+```{=html}
+{% include feature_row id="unidade1" %}
+```
 
-- [My personal website](https://palazzo.pt/)
-- [One of my course websites](https://palazzo.arq.br/tau0005/)
+## Unidade II · Debate sobre urbanização colonial ##
+
+```{=html}
+{% include feature_row id="unidade2" %}
+```
+
+## Unidade III · Espaços e territórios ##
+
+```{=html}
+{% include feature_row id="unidade3" %}
+```
 
